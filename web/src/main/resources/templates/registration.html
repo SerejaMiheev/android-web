@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <title>Регистрация пользователя</title>
+  <style type="text/css">
+    .field {
+      clear: both;
+      text-align: right;
+      line-height: 25px;
+    }
+
+    label {
+      float: left;
+      padding-right: 10px;
+    }
+
+    .main {
+      float: left
+    }
+
+  </style>
+</head>
+<body>
+<form action="#" th:action="@{/person/registration}" method="post" enctype="multipart/form-data"
+      id="search-form">
+  <div class="main">
+    <div class="field">
+      <label for="n">Фамилия</label>
+      <input type="text" th:value="${personDTO.threeName}" name="threeName">
+    </div>
+    <div class="field">
+      <label for="n">Имя</label>
+      <input type="text" th:value="${personDTO.firstName}" name="firstName">
+    </div>
+    <div class="field">
+      <label for="n">Отчество</label>
+      <input type="text" th:value="${personDTO.secondName}" name="secondName">
+    </div>
+    <div class="field">
+      <label for="n">Роль</label>
+      <select name="role">
+        <option th:each="r : ${roleList}" th:value="${r.id}" th:text="${r.getName()}" th:name="role"></option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="n">Дополнительные парамертры</label>
+      <div th:each="property : ${mapParamDTOValueDTO.paramDTOValueDTOMap.entrySet()}">
+        <div class="form-group">
+          <p th:for="*{mapParamDTOValueDTO.paramDTOValueDTOMap['__${property.key}__']}" th:text="${property.key}"></p>
+          <input type="text" th:field="*{mapParamDTOValueDTO.paramDTOValueDTOMap['__${property.key}__']}" />
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label for="n">Загрузите файл</label>
+      <input type="file" name="file">
+    </div>
+    <p><input type="submit" value="Submit"/> <input type="reset" value="Reset"/></p>
+  </div>
+</form>
+</body>
+</html>

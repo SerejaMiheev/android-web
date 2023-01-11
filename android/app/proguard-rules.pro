@@ -1,0 +1,6 @@
+-keep class androidx.lifecycle.* {*;}
+-keep class x.cross.androqr.databinding.** {*;}
+-keep class kotlin.** {*;}
+-keep class kotlinx.** {*;}
+-keep class x.cross.androqr.R.* {*;}
+-keep class x.cross.androqr.model.dto.rest.* {*;}

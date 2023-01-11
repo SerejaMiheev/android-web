@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">AndroQR</string>
+    <string name="a_splash_logo_desc">Application logo</string>
+
+    <string name="a_detail_btn_scanner_desc">Return to Scanner Button</string>
+    <string name="a_detail_img_desc">Image person</string>
+
+    <string name="a_detail_tv_role_desc">Role text view</string>
+    <string name="a_detail_tv_role_title">Role:</string>
+
+    <string name="a_detail_tv_name_desc">Name text view</string>
+    <string name="a_detail_tv_name_title">Name:</string>
+
+    <string name="a_detail_tv_second_name_desc">Second name text view</string>
+    <string name="a_detail_tv_second_name_title">Second name:</string>
+
+    <string name="a_detail_tv_weapon_desc">Weapon text view</string>
+    <string name="a_detail_tv_weapon_title">Weapon:</string>
+
+    <string name="a_detail_tv_parent_name_desc">Parent name text view</string>
+    <string name="a_detail_tv_parent_name_title">Parent name:</string>
+
+    <string name="a_detail_tv_app_name_desc">Application name text view</string>
+
+    <string name="a_auth_tv_username_title">Username</string>
+    <string name="a_auth_tv_password_title">Password</string>
+    <string name="a_auth_tv_login_title">LOGIN</string>
+    <string name="a_auth_b_sign_in_title">sign in</string>
+
+    <string name="alert_error_title">Error</string>
+
+    <string name="alert_info_title">Info</string>
+    <string name="alert_give_text">Give</string>
+    <string name="alert_camera_error">Camera initialization error:</string>
+    <string name="alert_ok">OK</string>
+    <string name="alert_warning_title">Warning</string>
+    <string name="alert_auth">Authorization</string>
+    <string name= "alert_camera_permission_denied">App requires permission to scan QR code</string>
+    <string name= "alert_message_passowrd_error">Your username or password is not correct</string>
+    <string name= "alert_message_qr_error">This QR code is not valid</string>
+    <string name="load">Load…</string>
+
+    <string name="error_500">Internal Server Error</string>
+    <string name="error_wtf">Something went wrong\nWe do not know what\nNo one knows</string>
+
+
+</resources>
